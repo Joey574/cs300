@@ -1,0 +1,5 @@
+if(EXISTS "/home/joey/repos/cs300/project0-playlist-warmup/tests/project0_unit_tests[1]_tests.cmake")
+  include("/home/joey/repos/cs300/project0-playlist-warmup/tests/project0_unit_tests[1]_tests.cmake")
+else()
+  add_test(project0_unit_tests_NOT_BUILT project0_unit_tests_NOT_BUILT)
+endif()
