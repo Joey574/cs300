@@ -1,4 +1,5 @@
 #include "clock.hpp"
+#include <stdexcept>
 
 #define MINUTES_IN_DAY 1440
 #define MINUTES_IN_HOUR 60
@@ -12,8 +13,12 @@ int Clock::Minute() const {
     return this->minutes % MINUTES_IN_HOUR;
 }
 
-void Clock::Advance(int minute) {
-    this->minutes += minute % MINUTES_IN_DAY;
+void Clock::Advance(int minutes) {
+    if (minutes < 0) {
+        throw std::invalid_argument("minutes must be positive");
+    }
+
+    this->minutes += minutes % MINUTES_IN_DAY;
 }
 
 #undef MINUTES_IN_DAY
