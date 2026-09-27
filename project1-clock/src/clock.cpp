@@ -14,10 +14,6 @@ int Clock::Minute() const {
 }
 
 void Clock::Advance(int minutes) {
-    if (minutes < 0) {
-        throw std::invalid_argument("minutes must be positive");
-    }
-
     this->minutes += minutes % MINUTES_IN_DAY;
 }
 

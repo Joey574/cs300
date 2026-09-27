@@ -1,4 +1,3 @@
-#include "gtest/gtest.h"
 #include <gtest/gtest.h>
 #include <stdexcept>
 
@@ -36,9 +35,12 @@ TEST(AdvanceClockTest, LargeAdvance) {
     EXPECT_EQ(clock.Minute(), 20);
 }
 
-TEST(AdvanceClockTest, InvalidArgument) {
+TEST(AdvanceClockTest, NegativeAdvance) {
     Clock clock(12, 00);
-    EXPECT_THROW(clock.Advance(-120), std::invalid_argument);
+    clock.Advance(-138);
+
+    EXPECT_EQ(clock.Hour(), 9);
+    EXPECT_EQ(clock.Minute(), 42);
 }
 
 TEST(AdvanceClockTest, HolisticTest) {
