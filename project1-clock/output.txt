@@ -1,0 +1,29 @@
+Running main() from /home/joey574/repos/cs300/build/_deps/googletest-src/googletest/src/gtest_main.cc
+[==========] Running 7 tests from 3 test suites.
+[----------] Global test environment set-up.
+[----------] 2 tests from ClockConstructorTest
+[ RUN      ] ClockConstructorTest.DefaultConstructor
+[       OK ] ClockConstructorTest.DefaultConstructor (0 ms)
+[ RUN      ] ClockConstructorTest.ParameterizedConstructor
+[       OK ] ClockConstructorTest.ParameterizedConstructor (0 ms)
+[----------] 2 tests from ClockConstructorTest (0 ms total)
+
+[----------] 1 test from ClockContrctorTest
+[ RUN      ] ClockContrctorTest.BadArguments
+[       OK ] ClockContrctorTest.BadArguments (0 ms)
+[----------] 1 test from ClockContrctorTest (0 ms total)
+
+[----------] 4 tests from AdvanceClockTest
+[ RUN      ] AdvanceClockTest.SimpleAdvance
+[       OK ] AdvanceClockTest.SimpleAdvance (0 ms)
+[ RUN      ] AdvanceClockTest.LargeAdvance
+[       OK ] AdvanceClockTest.LargeAdvance (0 ms)
+[ RUN      ] AdvanceClockTest.NegativeAdvance
+[       OK ] AdvanceClockTest.NegativeAdvance (0 ms)
+[ RUN      ] AdvanceClockTest.HolisticTest
+[       OK ] AdvanceClockTest.HolisticTest (0 ms)
+[----------] 4 tests from AdvanceClockTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 7 tests from 3 test suites ran. (0 ms total)
+[  PASSED  ] 7 tests.

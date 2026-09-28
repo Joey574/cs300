@@ -62,7 +62,11 @@ TEST(AdvanceClockTest, HolisticTest) {
     EXPECT_EQ(clock.Hour(), 4);
     EXPECT_EQ(clock.Minute(), 0);
 
-    clock.Advance(721);
+    clock.Advance(-1);
+    EXPECT_EQ(clock.Hour(), 3);
+    EXPECT_EQ(clock.Minute(), 59);
+
+    clock.Advance(722);
     EXPECT_EQ(clock.Hour(), 16);
     EXPECT_EQ(clock.Minute(), 1);
 

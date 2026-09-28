@@ -1,5 +1,4 @@
 #include "clock.hpp"
-#include <stdexcept>
 
 #define MINUTES_IN_DAY 1440
 #define MINUTES_IN_HOUR 60
