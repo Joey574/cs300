@@ -1,0 +1,34 @@
+@startuml
+class Ring<T> {
+
+    // Constructor for ring class,
+    // takes an integer argument to
+    // be used as the capacity.
+    // Capacity must be non negative
+    +Ring(capacity: int)
+
+    // Advances the head of the ring
+    // by one, modulo capacity
+    +Advance(): void
+
+    // Inserts an item at the head
+    // if an item is already there,
+    // it is overwritten
+    +Insert(item: T): void
+
+    // Removes an item at the head
+    +Remove(): void
+
+    // Gets the item at the head,
+    // returns a nullptr if no item
+    // exists
+    +Current(): &T
+
+    // Stores the current position in the vector
+    -head: int
+
+    // Class information is backed by a vector
+    // to manage lifetime
+    -data: std::vector<T>
+}
+@enduml
