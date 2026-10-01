@@ -39,3 +39,4 @@ enable_testing()
 
 add_subdirectory(project0-playlist-warmup)
 add_subdirectory(project1-clock)
+add_subdirectory(project2-shopping-cart)
