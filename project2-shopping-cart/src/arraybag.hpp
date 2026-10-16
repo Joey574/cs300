@@ -3,17 +3,18 @@
 #include <cstddef>
 #include <cstdlib>
 #include <cstring>
+#include <vector>
 
 template<typename T>
 class ResizeableArrayBag {
     public:
         ResizeableArrayBag<T>() : data(nullptr), size(0), capacity(0) {}
-        ResizeableArrayBag<T>(int capacity) : data(malloc(capacity*sizeof(T))), size(0), capacity(size) {}
+        ResizeableArrayBag<T>(int capacity) : data((T*)malloc(capacity*sizeof(T))), size(0), capacity(size) {}
 
         void Push(T item) {
             if (size == capacity) {
                 capacity *= 2;
-                data = realloc(data, capacity*sizeof(T));
+                data = (T*)realloc(data, capacity*sizeof(T));
             }
 
             data[size++] = item;
@@ -21,6 +22,7 @@ class ResizeableArrayBag {
 
         T getNext();
         T removeNext();
+        std::vector<T> toVector();
 
         size_t Size() const {
             return size;
