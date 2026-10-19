@@ -8,8 +8,6 @@ unsigned long long OneToNSumCalculator::sumConstant(unsigned long long n) {
     //
     // impl 2:
 
-   if (n == 0 || n == 1) return n;
-
     const unsigned long long half = n >> 1;
     const unsigned long long remainder = (n & 1) ? half+1 : 0;
 
