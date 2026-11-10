@@ -1,0 +1,25 @@
+Read 11 messages.
+Before sorting:
+1001 | alice@example.com | Meeting agenda
+1005 | bob@example.com | Budget review
+1012 | carol@example.com | Lunch Friday
+1020 | dave@example.com | Budget review
+1031 | erin@example.com | Course schedule
+1040 | frank@example.com | Meeting agenda
+1052 | grace@example.com | Zoom link
+1063 | heidi@example.com | Budget review
+1070 | ivan@example.com | Assignment 6
+1081 | judy@example.com | Lunch Friday
+1090 | kim@example.com | Course schedule
+After sorting:
+1070 | ivan@example.com | Assignment 6
+1005 | bob@example.com | Budget review
+1020 | dave@example.com | Budget review
+1063 | heidi@example.com | Budget review
+1031 | erin@example.com | Course schedule
+1090 | kim@example.com | Course schedule
+1012 | carol@example.com | Lunch Friday
+1081 | judy@example.com | Lunch Friday
+1001 | alice@example.com | Meeting agenda
+1040 | frank@example.com | Meeting agenda
+1052 | grace@example.com | Zoom link
